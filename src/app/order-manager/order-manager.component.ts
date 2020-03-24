@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Order, fakeApiOrderData } from '../api-types';
+import { Order, fakeApiOrders } from '../api-types';
 
 @Component({
   selector: 'order-manager',
@@ -11,7 +11,7 @@ export class OrderManagerComponent {
   selectedOrder: Order | undefined;
 
   constructor() {
-    this.orderList = fakeApiOrderData;
+    this.orderList = fakeApiOrders;
   }
 
   setOrder(order: Order) {
