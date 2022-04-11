@@ -7,5 +7,6 @@ import { Order } from '../api-types';
   templateUrl: './order-details.component.html'
 })
 export class OrderDetailsComponent {
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('selectedOrderDetails') sod: Order | undefined;
 }
