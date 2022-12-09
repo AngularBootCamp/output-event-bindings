@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "defaultProject": "output-event-bindings",
   "newProjectRoot": "projects",
   "projects": {
     "output-event-bindings": {
