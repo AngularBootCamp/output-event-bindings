@@ -5,10 +5,10 @@ import {
   Output
 } from '@angular/core';
 
-import { Order } from '../api-types';
+import { Order } from '..https://api.angularbootcamp.com-types';
 
 @Component({
-  selector: 'order-list',
+  selector: 'app-order-list',
   templateUrl: './order-list.component.html'
 })
 export class OrderListComponent {
