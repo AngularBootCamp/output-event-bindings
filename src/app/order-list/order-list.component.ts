@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import {
   Component,
   EventEmitter,
@@ -9,7 +10,9 @@ import { Order } from '../api-types';
 
 @Component({
   selector: 'app-order-list',
-  templateUrl: './order-list.component.html'
+  templateUrl: './order-list.component.html',
+  standalone: true,
+  imports: [NgFor]
 })
 export class OrderListComponent {
   @Input() orders: Order[] = [];
