@@ -15,7 +15,7 @@ import { Order } from '../api-types';
   imports: [NgFor]
 })
 export class OrderListComponent {
-  @Input() orders: Order[] = [];
+  @Input({ required: true }) orders!: Order[];
 
   @Output() selectOrder = new EventEmitter<Order>();
 

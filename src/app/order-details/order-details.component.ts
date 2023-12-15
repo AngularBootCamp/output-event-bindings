@@ -12,6 +12,10 @@ import { OrderItemsComponent } from '../order-items/order-items.component';
   imports: [NgIf, OrderHeaderComponent, OrderItemsComponent]
 })
 export class OrderDetailsComponent {
-  // eslint-disable-next-line @angular-eslint/no-input-rename
-  @Input('selectedOrderDetails') sod: Order | undefined;
+  @Input({
+    required: true,
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    alias: 'selectedOrderDetails'
+  })
+  sod: Order | undefined;
 }

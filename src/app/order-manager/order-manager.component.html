@@ -4,9 +4,7 @@
   <app-order-list
     (selectOrder)="setOrder($event)"
     [orders]="orderList"
-  ></app-order-list>
+  />
 
-  <app-order-details
-    [selectedOrderDetails]="selectedOrder"
-  ></app-order-details>
+  <app-order-details [selectedOrderDetails]="selectedOrder" />
 </article>
