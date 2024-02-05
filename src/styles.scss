@@ -32,6 +32,10 @@ app-order-manager article {
 
   app-order-list {
     grid-area: order-list;
+
+    a {
+      cursor: pointer;
+    }
   }
 
   app-order-details {
